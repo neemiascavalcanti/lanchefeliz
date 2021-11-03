@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background: #c10000; 
+}
+header img{
+    width: 80px;
+}
+header #pesquisa{
+    display: flex;
+    width: 100%;
+    margin-left: 15px;
+}
+header #busca{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+header #busca input{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+
+    color: #868686;
+    font-size: 20px;
+
+    background-image: url(./assets/icons8-search-64.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: right;
+    background-position-y: center;
+
+    padding-left: 20px;
+
+}
+
+header #busca input::placeholder{
+    padding-left: 2px;
+}
+
+header #busca p, header #filtro p{
+    width: 20%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0 10px 0 10px;
+}
+header #filtro{
+    display: flex;
+    align-items: center;
+
+    margin-top: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    border: solid 2px;
+    border-radius: 5px;
+    height: 40px;
+
+    transition: 0,3s;
+}
+header #filtro img{
+    width: 44px;
+    margin: 0 10px 0 10px;
+}
+
+main #banner {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+main #banner p{
+    font-size: 24px;
+    font-family: 'Roboto' sans-serif;
+    margin-bottom: 10px;
+    color: #323232;
+    font-weight: 700;
+   
+}
+
+main #banner img {
+    width: 100%;
+    max-height: 400px;
+}
+
+main #banner #pedido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -120px 60px 0 60px;
+
+    z-index: 2;
+}
+
+main #banner #pedido #promocao p{
+    color: #ffffff;
+    max-width: 230px;
+}
+
+main #banner #pedido button{
+    background: #c10000;
+    min-height: 40px;
+    min-width: 130px;
+    border-radius: 3px;
+    border: 0;
+    color: #ffffff;
+    font-weight: 350;
+    font-size: 12px;
+
+    transition: 0,3s;
+}
+
+main #banner #pedido button:hover, header #filtro:hover{
+    cursor: pointer;
+    background: #bf5050;
+}
+
+main #conteudo{
+    max-width: 90%;
+    margin:20px auto;
+}
+
+main #conteudo #titulo{
+    font-size: 24px;
+    color: #323232;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main #conteudo #produto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #conteudo #produto .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 45%;
+    height: 80px;
+    border: solid 2px #323232;
+    border-radius: 5px;
+
+    margin: 5px 5px;
+}
+
+main #conteudo #produto .card .lanche{
+    width: 250px;
+    height: 100%;
+}
+
+main #conteudo #produto .card .lanche img{
+    width: 100%;
+    height: 100%;
+}
+
+main #conteudo #produto .card .item{
+    margin: 0 5px 0 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main #conteudo #produto .card .item p{
+    font-family: 'Roboto', sans-serif;
+    color: #323232;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+main #conteudo #produto .card .item .descrição{
+    font-weight: 400;
+}
+
+main #conteudo #produto .card .valor-qtd{
+    margin: auto 10px;
+}
+
+main #conteudo #produto .card .valor-qtd .valor{
+    color: #c10000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+main #conteudo #produto .card .valor-qtd .qtd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd p{
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: #c10000;
+    color: #ffffff;    
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .quantia{
+    background: #c4c4c4;
+    color: #323232;
+    text-align: center;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .sub{
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .add{
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+
+}
+
+footer img{
+    width: 120px;
+}
+
+footer #compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer #compra img{
+    width: 40px;
+    margin: 10px 0;
+}
+
+footer #compra #pedir, footer #compra #cadastrar{
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+footer #compra #pedir{
+    background: #000;
+}
+footer #compra #pedir:hover{
+    background: #323232;
+
+}
+
+footer #compra #cadastrar{
+    background: #00be00;
+}
+footer #compra #cadastrar:hover{
+    background: #639463;
+}
+
+footer #compra input{
+    width: 100%;
+    height: 20px;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px 0;
+
+    color: #000000;
+    font-size: 24px;
+
+    background-image: url(./assets/download.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+footer #link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
